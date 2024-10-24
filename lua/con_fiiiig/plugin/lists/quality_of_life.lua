@@ -40,5 +40,15 @@ return {
 		"uga-rosa/ccc.nvim",
 		name = "color_picker",
 		opts = {}
+	},
+
+	-- hide sensitive tokens, just in case
+	{
+		"laytan/cloak.nvim",
+		name = "cloak",
+		opts = {
+			cloak_character = "?",
+			patterns = { options.cloak_patterns }
+		}
 	}
 };

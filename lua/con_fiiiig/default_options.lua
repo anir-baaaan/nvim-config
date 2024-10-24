@@ -5,13 +5,12 @@ return {
 	initial_expand_tabs = false,
 	initial_tab_length = 4,
 	lsp_setup = {
-		lua_ls = {
-			settings = {
-				Lua = {
-					callSnippet = "Replace"
-				}
-			}
-		}
+		lua_ls = { settings = { Lua = { callSnippet = "Replace" } } }
+	},
+	cloak_patterns = {
+		file_pattern = {},
+		cloak_pattern = {},
+		replace = nil
 	},
 	mode_strings = {
 		["n"] = " Normal ", ["niI"] = " Insert [Normal] ",
